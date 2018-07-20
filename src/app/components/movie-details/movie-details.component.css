@@ -1,0 +1,30 @@
+:host {
+    display: block;
+    color: #dde3ee;
+    height: 100%;
+    padding: 1em;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+
+.poster img {
+    box-shadow: 10px 10px 30px #111111;
+}
+
+.close-button {
+    border: 2px solid black;
+    cursor: pointer;
+    font-size: 32px;
+    padding: 0.1em 0.25em;
+}
+
+.details {
+    max-width: calc(100vw - 550px - 2em);
+    padding: 2em;
+}
+
+.title {
+    display: inline-block;
+    margin-left: 1em;
+}
