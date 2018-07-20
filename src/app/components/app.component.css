@@ -1,15 +1,39 @@
 :host {
-    background: #334455;
+    background: hsl(210, 25%, 27%);
     display: block;
 }
 
-app-movie-details {
-    position: absolute;
+header {
+    background: #3f5974;
+    box-shadow: 5px 5px 20px #333333;
+    height: 70px;
+    position: fixed;
     left: 0;
     top: 0;
+    width: 100vw;
+    z-index: 1;
+}
+
+app-movie-details {
+    position: fixed;
+    left: 0;
+    top: 64px;
     transform: translateX(100vw);
-    transition: transform 1s;
+    transition: transform ease-in-out 0.5s;
 }
 app-movie-details.active {
+    transform: translateX(0);
+}
+
+app-movie-list {
+    display: block;
+    margin: 0 auto;
+    opacity: 0;
+    padding-top: 85px;
+    transform: translateX(-100vw);
+    transition: opacity ease-in-out 0.25s, transform ease-in-out 0.5s;
+}
+app-movie-list.active {
+    opacity: 1;
     transform: translateX(0);
 }

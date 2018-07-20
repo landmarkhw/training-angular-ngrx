@@ -10,7 +10,7 @@
         is created over and over for each movie in the list.
 -->
 <div
-    class="movie-container flex-row">
+    class="flex-row">
     <div
         *ngFor="let movie of searchResults$ | async; let i = index;"
         (click)="handleClick(movie)"

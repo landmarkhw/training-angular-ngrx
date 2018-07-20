@@ -7,9 +7,10 @@ import { StoreDevtoolsModule } from "@ngrx/store-devtools";
 import { AppComponent } from "./components/app.component";
 import { MovieDetailsComponent } from "./components/movie-details/movie-details.component";
 import { MovieListComponent } from "./components/movie-list/movie-list.component";
-import { reducers } from "./reducers";
-import { MovieService } from "./services/movie.service";
 import { MovieEffects } from "./effects/movie.effects";
+import { reducers } from "./reducers";
+import { AuthService } from "./services/auth.service";
+import { MovieService } from "./services/movie.service";
 
 @NgModule({
     declarations: [
@@ -28,6 +29,7 @@ import { MovieEffects } from "./effects/movie.effects";
         StoreDevtoolsModule.instrument(),
     ],
     providers: [
+        AuthService,
         MovieService,
     ],
     bootstrap: [AppComponent]
