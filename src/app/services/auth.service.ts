@@ -44,6 +44,7 @@ export class AuthService {
     register(request: RegistrationRequest): Observable<RegistrationResponse> {
         this.users.push(request as AuthenticateRequest);
 
+        // Simulate delay, 0.5 seconds
         return timer(500).pipe(
             map(() => ({ success: true }))
         );
