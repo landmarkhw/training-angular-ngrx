@@ -14,7 +14,10 @@ export class AuthService {
     // This service should normally call an API that's responsible for authentication.
     // Since we're not dealing with API development in this training material, this service
     // is merely a mock/stub of what a real AuthService should normally look like.
-    private users: AuthenticateRequest[] = [];
+    private users: AuthenticateRequest[] = [{
+        username: "test",
+        password: "test",
+    }];
 
     authenticate(request: AuthenticateRequest): Observable<AuthenticateResponse> {
         const index = this.users.findIndex(u =>
