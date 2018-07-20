@@ -11,7 +11,7 @@ import { MovieService } from "../services/movie.service";
 @Injectable()
 export class MovieEffects {
     @Effect()
-    login$: Observable<Action> = this.actions$.pipe(
+    search$: Observable<Action> = this.actions$.pipe(
         // Listen for the 'Search' movie BEGIN action
         ofType(MovieActionTypes.Search.BEGIN),
         mergeMap((action: PayloadAction<NowPlayingSearchOptions>) =>

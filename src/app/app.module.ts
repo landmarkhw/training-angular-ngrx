@@ -11,6 +11,7 @@ import { MovieEffects } from "./effects/movie.effects";
 import { reducers } from "./reducers";
 import { AuthService } from "./services/auth.service";
 import { MovieService } from "./services/movie.service";
+import { AuthEffects } from "./effects/auth.effects";
 
 @NgModule({
     declarations: [
@@ -21,6 +22,7 @@ import { MovieService } from "./services/movie.service";
     imports: [
         BrowserModule,
         EffectsModule.forRoot([
+            AuthEffects,
             MovieEffects,
         ]),
         HttpClientModule,
