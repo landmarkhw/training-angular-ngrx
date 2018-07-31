@@ -59,12 +59,14 @@ Let's add a dialog that allows the user to enter their username/password and log
 
 ### 2. Add a wait spinner for long-running actions
 
-We didn't get to this during the training.  I'll see if I can add it to the next training schedule.
+If you didn't complete part 1, you can checkout the "part2" branch to start where part 1 leaves off: `git checkout part2`
+
+> We didn't get to this during the training.  I'll see if I can add it to the next training schedule.
 
 ### 3. Add form validation on the user authentication dialog
 
-We didn't get to this during the training.  I'll see if I can add it to the next training schedule.
+> We didn't get to this during the training.  I'll see if I can add it to the next training schedule.
 
 ### 4. Add a user registration dialog
 
-We didn't get to this during the training.  I'll see if I can add it to the next training schedule.
+> We didn't get to this during the training.  I'll see if I can add it to the next training schedule.
