@@ -5,7 +5,7 @@ import { Observable, of } from "rxjs";
 import { catchError, map, mergeMap } from "rxjs/operators";
 import { AuthActions, AuthActionTypes } from "../actions/auth.actions";
 import { PayloadAction } from "../actions/defs";
-import { AuthenticateRequest, RegistrationRequest } from "../models/user";
+import { AuthenticateRequest, RegistrationRequest } from "../models/auth";
 import { AuthService } from "../services/auth.service";
 
 @Injectable()

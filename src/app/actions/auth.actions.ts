@@ -1,4 +1,4 @@
-import { AuthenticateRequest, AuthenticateResponse, RegistrationRequest, RegistrationResponse } from "../models/user";
+import { AuthenticateRequest, AuthenticateResponse, RegistrationRequest, RegistrationResponse } from "../models/auth";
 import { AsyncAction, createAsyncActions } from "./defs";
 
 /**

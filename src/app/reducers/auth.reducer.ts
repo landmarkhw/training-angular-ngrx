@@ -1,5 +1,5 @@
 import { PayloadAction } from "../actions/defs";
-import { AuthenticateResponse } from "../models/user";
+import { AuthenticateResponse } from "../models/auth";
 import { AuthActionTypes } from "../actions/auth.actions";
 
 /**

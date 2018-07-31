@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { AuthenticateRequest, RegistrationRequest, AuthenticateResponse, RegistrationResponse } from "../models/user";
+import { AuthenticateRequest, RegistrationRequest, AuthenticateResponse, RegistrationResponse } from "../models/auth";
 import { timer, of, Observable } from "rxjs";
 import { map } from "../../../node_modules/rxjs/operators";
 
