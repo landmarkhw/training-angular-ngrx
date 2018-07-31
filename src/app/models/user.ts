@@ -10,9 +10,12 @@ export interface AuthenticateRequest {
 
 export interface AuthenticateResponse extends Response {
     access_key?: string;
+    displayName: string;
+    username: string;
 };
 
 export interface RegistrationRequest {
+    displayName: string;
     username: string;
     password: string;
 }
