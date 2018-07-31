@@ -21,8 +21,8 @@ I recommend you complete the previous workshop before continuing:
 
 Here's what we'll be trying to accomplish on in this training workshop:
 
-1. Add a wait spinner for long-running actions
 1. Add a user authentication dialog (e.g. login)
+1. Add a wait spinner for long-running actions
 1. Add form validation on the user authentication dialog
 1. Add a user registration dialog
 
@@ -55,4 +55,16 @@ Let's add a dialog that allows the user to enter their username/password and log
     * Hook up the form submission to use the new `auth` actions to sign in.
     * Create selectors - `auth.selectors.ts`
         * `getIsAuthenticated()`
-        * `
+        * `getAuthenticatedDisplayName()`
+
+### 2. Add a wait spinner for long-running actions
+
+We didn't get to this during the training.  I'll see if I can add it to the next training schedule.
+
+### 3. Add form validation on the user authentication dialog
+
+We didn't get to this during the training.  I'll see if I can add it to the next training schedule.
+
+### 4. Add a user registration dialog
+
+We didn't get to this during the training.  I'll see if I can add it to the next training schedule.
