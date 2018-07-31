@@ -1,10 +1,10 @@
-import { Component, OnInit, Input } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { Store } from "@ngrx/store";
 import { Observable } from "rxjs";
 import { MovieActions } from "../../actions/movie.actions";
 import { SearchResult } from "../../models/themoviedb";
 import { AppState } from "../../reducers";
-import { getSearchResultList, getSelectedMovie } from "../../selectors/movie.selectors";
+import { getSearchResultList } from "../../selectors/movie.selectors";
 
 @Component({
     selector: "app-movie-list",
