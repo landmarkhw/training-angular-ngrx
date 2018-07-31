@@ -6,14 +6,14 @@ import { AuthActionTypes } from "../actions/auth.actions";
  * Define the `auth` area of state.
  */
 export interface AuthState {
-    access_key: string;
+    response: AuthenticateResponse;
 };
 
 /**
  * The default state.
  */
 const defaultState: AuthState = {
-    access_key: null,
+    response: null,
 };
 
 /**
@@ -30,7 +30,7 @@ export function authReducer(state = defaultState, action: PayloadAction<Authenti
             // This makes the reducer a `pure` function -- we don't modify
             // state directly, but clone it first, and then modify the clone.
             return Object.assign({}, state, {
-                access_key: action.payload.access_key,
+                response: action.payload,
             } as AuthState);
         }
 

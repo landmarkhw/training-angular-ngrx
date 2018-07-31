@@ -1,0 +1,15 @@
+<div>
+    <div *ngIf="errorMessage" class="error">
+        {{ errorMessage }}
+    </div>
+
+    <mat-form-field>
+        <input matInput [formControl]="username" placeholder="Username" />
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput [formControl]="password" placeholder="Password" type="password" />
+    </mat-form-field>
+    <mat-form-field style="text-align: right;">
+        <button mat-button (click)="handleSignIn()">Sign In</button>
+    </mat-form-field>
+</div>

@@ -3,17 +3,6 @@
     display: block;
 }
 
-header {
-    background: #3f5974;
-    box-shadow: 5px 5px 20px #333333;
-    height: 70px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    z-index: 1;
-}
-
 app-movie-details {
     position: fixed;
     left: 0;

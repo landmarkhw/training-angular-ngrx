@@ -1,11 +1,12 @@
 import { Injectable } from "@angular/core";
+import { MatSnackBar } from "@angular/material/snack-bar";
 import { Actions, Effect, ofType } from "@ngrx/effects";
 import { Action } from "@ngrx/store";
-import { Observable, of } from "rxjs";
-import { catchError, map, mergeMap } from "rxjs/operators";
+import { Observable, of, empty } from "rxjs";
+import { catchError, map, mergeMap, tap, switchMap } from "rxjs/operators";
 import { AuthActions, AuthActionTypes } from "../actions/auth.actions";
 import { PayloadAction } from "../actions/defs";
-import { AuthenticateRequest, RegistrationRequest } from "../models/auth";
+import { AuthenticateRequest, AuthenticateResponse, RegistrationRequest } from "../models/auth";
 import { AuthService } from "../services/auth.service";
 
 @Injectable()
@@ -28,7 +29,7 @@ export class AuthEffects {
                         }
                     }),
                     catchError(error => of(AuthActions.auth.failure(error))),
-                )
+            )
         )
     );
 
@@ -50,12 +51,13 @@ export class AuthEffects {
                         }
                     }),
                     catchError(error => of(AuthActions.register.failure(error))),
-                )
+            )
         )
     );
 
     constructor(
         private actions$: Actions,
         private authService: AuthService,
+        private snackBar: MatSnackBar,
     ) { }
 }

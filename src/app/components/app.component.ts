@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { MatDialog } from "@angular/material/dialog";
 import { Store } from "@ngrx/store";
 import { Observable, of, timer } from "rxjs";
 import { map, switchMap } from "rxjs/operators";
@@ -20,6 +21,7 @@ export class AppComponent {
     selectedMovie$: Observable<SearchResult>;
 
     constructor(
+        private dialog: MatDialog,
         private store: Store<AppState>,
     ) {
         this.selectedMovie$ = this.store.select(getSelectedMovie);

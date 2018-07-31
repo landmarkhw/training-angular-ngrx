@@ -1,9 +1,15 @@
 import { movieReducer, MovieState } from "./movie.reducer";
+import { AuthState, authReducer } from "./auth.reducer";
 
 /**
  * The shape of the state for the application.
  */
 export interface AppState {
+    /**
+     * Authentication-related state.
+     */
+    auth: AuthState;
+
     /**
      * Movie-related state.
      */
@@ -16,5 +22,6 @@ export interface AppState {
  * defined in `AppState`.
  */
 export const reducers = {
+    auth: authReducer,
     movie: movieReducer,
 };

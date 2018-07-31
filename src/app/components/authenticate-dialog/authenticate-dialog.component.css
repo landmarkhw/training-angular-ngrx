@@ -1,0 +1,11 @@
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+mat-form-field {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+

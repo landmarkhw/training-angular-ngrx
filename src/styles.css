@@ -8,11 +8,6 @@ html, body {
     padding: 0;
 }
 
-*:focus {
-    border: 2px dashed #0055cc !important;
-    outline: 0;
-}
-
 .flex-row {
     display: flex;
     flex-direction: row;
@@ -26,3 +21,6 @@ html, body {
     flex: 0 1 auto;
     align-self: auto;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Roboto', sans-serif; }
